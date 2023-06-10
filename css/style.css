@@ -26,9 +26,20 @@
         "sidebar footer footer footer";
     }
   
-  nav  {
-    background-color: aqua;
+  #maNav  {
+    background-color: rgb(203, 219, 219);
     grid-area: nav;
+    padding: 0%;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  nav ul li  {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
   }
   main  {
     background-color: rgb(138, 150, 150);
@@ -102,7 +113,96 @@
     font-weight: bolder;
   }
   img[src="./images/a real like aer 0.png"]  {
-    width: 300px;
+    width: 350px;
     display: block;
     margin: auto;
   }
+  img[src="./images/school logo.png"] {
+    width: 250px;
+    float: left;
+  }
+  
+  .navbar-default .navbar-nav > li > a{
+    color:#e04747;
+    padding:15px 15px;
+    outline:none;
+  }
+  .dropdown-menu+a[class="dropdown-toggle"]  {
+   color: rgba(194, 194, 44, 0.048);
+  }
+  
+  #dropdown-menu {
+    border-radius:1px;
+  }
+  
+  .navbar-default .navbar-nav > li > a:hover{
+    color:#3f1717;
+    background-color:#861e1e;
+  }
+  
+  
+  @media screen and (max-width:768px) and (min-width:100px) {
+    
+    .main{
+      width:25%;
+    }
+   .navbar-default .navbar-nav > li > a {
+      color: #fff;
+      outline: none;
+     overflow:hidden;
+  }
+    .navbar {
+    overflow:hidden;
+      width:25%;
+  }
+    .navbar ul li{
+      position:relative;
+    }
+      .navbar ul li a{
+        margin-left: 15px;
+        
+      }
+      .navbar ul li:active {
+     color:green;
+      }
+    
+    
+    .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: transparent;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+    
+  .navbar-nav .open .dropdown-menu>li:hover a{
+      
+      background-color: transparent;
+    margin-left:18px;
+    color:#fff !important;
+    
+  }
+    .navbar-nav .open .dropdown-menu>li:hover:before{
+      font:normal normal normal 14px/1 FontAwesome;
+      content:'\f054';
+       width:10px;
+      height:10px;
+      position:absolute;
+      left:18%;
+      top:46%;
+      transform:translate(-50%,-50%);
+      color:#e14444;
+   
+      
+    }
+    
+    
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+      color: #e14444;
+  }
+  }
+  
+  

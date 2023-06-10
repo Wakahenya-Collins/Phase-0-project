@@ -1,0 +1,49 @@
+#schoolHeading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 
+       "nav nav nav nav"
+       "sidebar main main main"
+        "sidebar content1 content2 content3"
+        "sidebar footer footer footer";
+    }
+  
+  nav  {
+    background-color: aqua;
+    grid-area: nav;
+  }
+  main  {
+    background-color: rgb(138, 150, 150);
+    grid-area: main;
+  }
+  #sidebar  {
+    background-color: rgb(55, 137, 209);
+    grid-area: sidebar;
+  }
+  #content1  {
+    background-color: aquamarine;
+    grid-area: content1;
+  }
+  #content2  {
+    background-color: #333;
+    grid-area: content2;
+  }
+  #content3   {
+    background-color: bisque;
+    grid-area: content3;
+  }
+  #footer    {
+    background-color: beige;
+    grid-area: footer;
+  }

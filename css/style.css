@@ -126,12 +126,13 @@
     display: block;
     margin: auto;
   }
+  
   .navbar-default .navbar-nav > li > a{
     color:#e04747;
-    padding:15px 15px;
+    padding:5px 5px;
     outline:none;
   }
-  .dropdown-menu+a[class="dropdown-toggle"]  {
+  a[class="dropdown-toggle"]  {
    color: rgba(194, 194, 44, 0.048);
   }
   
